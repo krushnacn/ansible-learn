@@ -2,7 +2,7 @@
   -
     name: Check connectivity to remote hosts
     hosts: all
-    task:
+    tasks:
         - name: ping check
           ping:
 
