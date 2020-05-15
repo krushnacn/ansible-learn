@@ -1,0 +1,9 @@
+---
+  -
+    name: Check connectivity to remote hosts
+    hosts: all
+    task:
+        - name: ping check
+          ping:
+
+...
