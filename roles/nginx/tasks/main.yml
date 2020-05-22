@@ -5,3 +5,12 @@
     state: present
     update_cache: true
   register: nginx_ppa_added
+- name: install nginx service
+  apt:
+    pkg: nginx
+    state: installed
+    update_cache: yes
+- name: nginx service reload
+  service:
+    name: nginx
+    command: systemctl reload nginx

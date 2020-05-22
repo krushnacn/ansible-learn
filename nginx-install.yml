@@ -1,0 +1,6 @@
+---
+ - hosts: target-vm1
+   tasks:
+     - include_role:
+          name: nginx
+...
