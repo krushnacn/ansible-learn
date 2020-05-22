@@ -1,0 +1,7 @@
+---
+- name: Add PPA for Nginx.
+  apt_repository:
+    repo: 'ppa:nginx/stable'
+    state: present
+    update_cache: true
+  register: nginx_ppa_added
