@@ -1,5 +1,5 @@
 ---
- - hosts: target-vm1
+ - hosts: target-1
    remote_user: ec2-user
    tasks:
      - include_role:
